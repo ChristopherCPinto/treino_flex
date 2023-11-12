@@ -1,40 +1,97 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:481px) and (max-width:768px) {
 
     body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+    transition: 1s;
+    width: 580px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+    
+       
+    }
+    #menu{
+    
+        width: 50%;
+        border: 2px solid black;
+        border-left: none;
+        height: auto;
+        border-radius: 0px 15px 15px 0px;
+    }
+    #imagem{
+        width: 50%;
+        border: 2px solid black;
+        height: auto;
+        border-right: none;
+        border-radius: 15px 0px 0px 15px;
+        background-size: cover;
+
         
     }
     
+
+   
+    
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
     .container{
+        transition: 1s;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 680px;
+        height: 400px;
+    }
+    #imagem{
+        
+        height: 80%;
+        border-radius: 0px 0px 20px 20px;
+        background-image: url(img/Fernando02.JPG);
+        
+        
+        background-repeat: no-repeat;
+        
+    }
+    #menu{
+        height: 20%;
         display: flex;
         flex-direction: row;
-        width: 580px;
-        height: 300px;
-        border: 2px solid;
-        border-radius: 20px;
+        justify-content:space-around;
         
     }
-   
-   #imagem{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-self: start;
-
-   }
-   
+    #menu h1{
+        width: 150px;
+    }
     
 }
 
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+                
+    }
+    .container{
+        background-color: red;
+        width: 500px;
+        height: 400px;
+        
+        
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+    }
     
-}
 
-@media screen and (min-width:1025px) and (max-width:1200px) {
     
 }

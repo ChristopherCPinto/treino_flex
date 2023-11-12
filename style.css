@@ -21,6 +21,9 @@ body{
     gap: 15px;
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(to top, blue, lightblue);
+    
+    
     
     
 }
@@ -29,6 +32,7 @@ body{
 
     display: flex;    
     flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     height: 580px;
     border: 2px solid;
@@ -40,20 +44,35 @@ body{
     flex-direction: row;
     justify-content: center;
     padding: 10px;
-    border: 1px solid;
-    background-color: lightcoral;
+    
+    background-image: url(img/fernando.JPG);
+    background-size: cover;
     height: 50%;
     align-items: center;
     border-radius: 20px 20px 0px 0px;
+    
+    
 }
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
 #menu h1{
-    background-color: red;
-    margin: 5px 0px;
+    background-color:lightblue;
+    margin: 10px 5px 5px 5px;
     padding: 10px;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    color:blue;
     
+}
+#menu h1:hover{
+    background-color: aqua;
+    transition: 0.5s;
 }
 
 
