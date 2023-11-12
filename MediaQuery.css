@@ -1,6 +1,15 @@
 @charset "UTF-8";
+/*
 
-@media screen and (min-width:481px) and (max-width:768px) {
+Tipical Device Breakpoints
+
+Celulares: de até 600px até 768px.
+Tablets:768px até 992px.
+Desktop: 992px até 1200px.
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width:992px) {/*TABLET*/
 
     body{
         width: 100vw;
@@ -42,7 +51,7 @@
 }
 
 
-@media screen and (min-width:769px) and (max-width:992px) {
+@media screen and (min-width:992px) and (max-width:1200px) {/*DESKTOP*/
     body{
         width: 100vw;
         height: 100vh;
@@ -77,20 +86,50 @@
     
 }
 
-@media screen and (min-width:992px) and (max-width:1200px) {
+@media screen and (min-width:1200px) {/*GRANDES TELAS*/
     body{
         width: 100vw;
         height: 100vh;
                 
     }
     .container{
-        background-color: red;
-        width: 500px;
-        height: 400px;
         
-        
+        transition: 1s;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 80%;       
 
     }
+    #imagem{
+        
+        height: 90%;
+        border-radius: 0px 0px 20px 20px;
+        background-image: url(img/Fernando02.JPG);
+        background-repeat: no-repeat;
+        
+    }
+    #menu{
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        background-image: linear-gradient(to top, black, lightblue);
+        border-radius: 20px 20px 0px 0px;
+        
+        
+        
+    }
+    #menu h1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 150px;
+        height: 15px;
+        border-radius: 5px;
+    }
+
     
 
     
