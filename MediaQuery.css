@@ -23,22 +23,19 @@ Grandes telas: acima de 1200px
     justify-content: space-between;
     flex-direction: row;
     border: none;
-    
-       
+    border: 2px solid;
     }
     #menu{
     
-        width: 50%;
-        border: 2px solid black;
-        border-left: none;
-        height: auto;
+        width: 50%;        
+        border-left: none;        
         border-radius: 0px 15px 15px 0px;
+        height:auto;
+        
     }
     #imagem{
         width: 50%;
-        border: 2px solid black;
         height: auto;
-        border-right: none;
         border-radius: 15px 0px 0px 15px;
         background-size: cover;
 
@@ -74,6 +71,7 @@ Grandes telas: acima de 1200px
         
     }
     #menu{
+        
         height: 20%;
         display: flex;
         flex-direction: row;
@@ -94,11 +92,13 @@ Grandes telas: acima de 1200px
     }
     .container{
         
+        
         transition: 1s;
         display: flex;
         flex-direction: column-reverse;
         width: 80%;
-        height: 80%;       
+        height: 80%;    
+        border: none;   
 
     }
     #imagem{

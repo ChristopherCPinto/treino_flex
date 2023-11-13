@@ -18,21 +18,15 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, blue, lightblue);
-    
-    
-    
-    
 }
 
 .container{
 
     display: flex;    
     flex-direction: column;
-    justify-content: space-between;
     width: 300px;
     height: 580px;
     border: 2px solid;
@@ -40,15 +34,10 @@ body{
     
 }
 #imagem{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px;
-    
     background-image: url(img/fernando.JPG);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 50%;
-    align-items: center;
     border-radius: 20px 20px 0px 0px;
     
     
@@ -56,15 +45,17 @@ body{
 #menu{
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    height: 50%;
 }
 
 #menu h1{
     background-color:lightblue;
-    margin: 10px 5px 5px 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    
+    padding: 10px;    
     cursor: pointer;
     border-radius: 20px;
     color:blue;
